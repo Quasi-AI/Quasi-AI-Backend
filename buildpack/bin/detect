@@ -1,9 +1,0 @@
-#!/bin/bash
-
-if [[ -f "package.json" ]]; then
-    echo "Found package.json, proceeding with Node.js buildpack."
-    exit 0
-else
-    echo "No package.json found, skipping Node.js buildpack."
-    exit 1
-fi
