@@ -1,0 +1,12 @@
+runtime: nodejs20
+env: standard
+runtime_config:
+  entrypoint: "nodemon start"
+
+# Optional: Define environment variables
+env_variables:
+  NODE_ENV: 'production'  # Set the environment to production
+
+handlers:
+  - url: /.*
+    script: auto  # Automatically route requests to your app
