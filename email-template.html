@@ -3,42 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quasi AI Email</title>
     <style>
       body {
-        font-family: 'Arial', sans-serif;
+        font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
         background-color: #f5f7fb;
-        color: black;
+        color: #333;
       }
 
       .email-container {
         max-width: 600px;
         margin: 30px auto;
-        background-color: #fff;
+        background-color: #ffffff;
         border-radius: 12px;
         overflow: hidden;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       }
 
+      /* Header */
       .header {
         background-color: #fff;
-        padding: 30px;
+        padding: 20px;
         text-align: center;
-        color: #fff;
       }
 
       .header img {
-        max-width: 120px;
-        margin-bottom: 20px;
+        width: 100px; /* Adjust logo size */
+        height: auto;
+        display: block;
+        margin: 0 auto;
       }
 
+      /* Content */
       .content {
         padding: 30px;
         text-align: center;
       }
 
-      .content h5 {
+      .content h2 {
         color: #5D3BE9;
         font-size: 24px;
         font-weight: bold;
@@ -47,10 +51,11 @@
       .content p {
         font-size: 16px;
         line-height: 1.6;
-        color: black;
+        color: #555;
         margin-bottom: 20px;
       }
 
+      /* Button */
       .button {
         display: inline-block;
         padding: 12px 25px;
@@ -63,11 +68,16 @@
         transition: background-color 0.3s ease;
       }
 
+      .button:hover {
+        background-color: #3b239b;
+      }
+
+      /* Footer */
       .footer {
         background-color: #f8f8f8;
         padding: 20px;
         text-align: center;
-        color: black;
+        color: #555;
         font-size: 14px;
       }
 
@@ -83,20 +93,21 @@
   </head>
   <body>
     <div class="email-container">
+      
       <!-- Header Section with Logo -->
       <div class="header">
-        <img src="https://firebasestorage.googleapis.com/v0/b/park4me-b2127.appspot.com/o/logo.png?alt=media&token=824caadb-e7db-4451-b337-08588d9ac8ac" alt="Quasi AI" />
+        <img src="https://firebasestorage.googleapis.com/v0/b/park4me-b2127.appspot.com/o/logo.png?alt=media&token=824caadb-e7db-4451-b337-08588d9ac8ac" alt="Quasi AI Logo" />
       </div>
 
       <!-- Email Content -->
       <div class="content">
-        <h5>Welcome to Quasi AI, {{username}}!</h5>
+        <h2>Welcome to Quasi AI, {{username}}!</h2>
         <p>We're thrilled to have you join our platform. Quasi AI is here to help you enhance your educational background and skills.</p>
         <p>To get started, simply click the button below to login to your account:</p>
         <a href="{{verification_link}}" class="button">Get Started</a>
       </div>
 
-      <!-- Footer Section with Company Info -->
+      <!-- Footer Section -->
       <div class="footer">
         <p><strong>Quasi AI</strong></p>
         <p>3308 DeReimer Ave FL 1, Bronx NY 10475, USA</p>

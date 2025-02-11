@@ -22,8 +22,8 @@ const transporter = nodemailer.createTransport({
   port: 465, // Port for SSL
   secure: true, // Use SSL
   auth: {
-    user: 'info@park4me.org',
-    pass: 'Park4Me@123'
+    user: 'info@quasiai.com',
+    pass: 'QuasiAI@123'
   }
 });
 
@@ -32,7 +32,7 @@ async function sendWelcomeEmail(user , resetlink, emailtemplate) {
   const emailTemplate = fs.readFileSync(emailtemplate, 'utf8'); // Read your HTML template
 
   const mailOptions = {
-    from: 'info@park4me.org',
+    from: 'info@quasiai.com',
     to: user.email,
     subject: 'Welcome to Quasi AI!',
     html: emailTemplate.replace('{{username}}', user.name).replace('{{verification_link}}', resetlink)
@@ -113,7 +113,7 @@ exports.create = async (req, res) => {
       // Save User in the database
       const savedUser = await user.save();
 
-      // Create profile after user creation
+      // //Create profile after user creation
       // const { email } = req.body;
 
       // // Check if profile already exists
