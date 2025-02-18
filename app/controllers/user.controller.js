@@ -83,7 +83,7 @@ exports.create = async (req, res) => {
     canManageSettings: false,
     
     // New Permissions
-    canManageQuestions: false,         // Permission to create and manage questions
+    canManageQuestions: false,        // Permission to create and manage questions
     canCreateQuizzes: false,          // Permission to create and manage quizzes
     canAccessFlashcards: false,       // Permission to access and use flashcards
     canCreateFlashcards: false,       // Permission to create flashcards
