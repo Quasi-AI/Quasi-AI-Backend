@@ -1,4 +1,3 @@
-const db = require("../models");
 const User = require("../models/user.model")
 const bcrypt = require('bcryptjs'); // For password hashing
 const jwt = require('jsonwebtoken'); // For token generation
