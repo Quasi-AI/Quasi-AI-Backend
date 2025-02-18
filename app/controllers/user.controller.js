@@ -106,6 +106,7 @@ exports.create = async (req, res) => {
       const user = new User({
         name: req.body.name,
         email: req.body.email,
+        role:  req.body.role,
         password: hashedPassword, // Store the hashed password
         permissions: defaultPermissions, // Storing JSON for permissions
       });
